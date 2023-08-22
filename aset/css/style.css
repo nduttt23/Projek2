@@ -1,0 +1,138 @@
+body{
+    min-height: 300px;
+}
+
+:root{
+    --biru-tua :#172c66;
+    --biru :#b8c1ec;
+    --putih :#ffff;
+    --kuning :#f1da08;
+    --pink : #ff03c8;
+    --merah :rgb(248, 0, 0) ;
+    --hijau :rgb(15, 253, 15) ;
+    --abu :#698b69;
+
+
+}
+
+.navbar{
+    background: var(--merah)
+}
+
+.navbar-brand img{
+    width: 350px;
+}
+
+.navbar-nav a.nav-link{
+    color: var(--putih);
+    font-weight: 500;
+}
+
+.navbar .navbar-nav a.nav-link:hover{
+    color: var(--kuning);
+    transition: 0,5s;
+}
+
+/* jumbotron */
+.jumbotron{
+    background: var(--pink);
+}
+
+.jumbotron span{
+    color: var(--kuning);
+}
+
+/* kolaborasi */
+.kolaborasi img{
+    width: 230px;
+}
+
+h2.judul::after{
+    border-bottom: 10px solid var(--biru-tua);
+    content:"" ;
+    display: block;
+    margin: auto;
+    width: 240px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+/* testimonial */
+.testmonial{
+    background: var(--biru-tua);
+}
+
+/* card blog */
+.blog .blog-info img{
+    width: 40px;
+    border-radius: 100%;
+}
+
+.blog .blog-info .text-body{
+    margin-left: -50px;
+    width: 8rem;
+}
+
+.blog .blog-info .text-body a{
+    float: left;
+    text-decoration: none;
+}
+
+.blog .blog-info .text-body a:hover{
+    color: var(--kuning);
+}
+
+.blog .blog-info .text-body span{
+    float: left;
+}
+
+/* ftur */
+.feature li{
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+
+/* responsip  */
+@media only screen and (max-width:375px){
+    .upgrade img {
+        width   : 200px;
+    }
+    .jumbotron h2{
+        font-size: 20px;
+    }
+    .jumbotron p{
+        font-size: 15;
+    }
+
+    .upgrade{
+        text-align: center;
+    }
+
+    .feature img{
+        width: 350px;
+    }
+
+    .feature P{
+        font-size: 10PX;    
+        text-align: center;
+    }
+}
+
+/* about */
+
+.walpeper{
+    background: aquamarine;
+}
+
+.koleb{
+    background: var(--pink);
+}
+
+.sayang{
+    background: var(--biru-tua);
+}
+
+.koleb li{
+    list-style: none;
+}
